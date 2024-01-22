@@ -1,0 +1,295 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 5fr 6fr; /* set the width of each column to be equal */
+    grid-template-rows: auto; /* let the row height adjust to the content */
+    grid-gap: 0px; /* add some spacing between columns */
+  }
+  
+  .grid-item {
+    background-color: white;
+    padding: 10px;
+    /* text-align: left; */
+  }
+  
+  .column1 {
+    grid-column: 1 / 2; /* set this column to start at grid line 1 and end at grid line 2 */
+  }
+  
+  .column2 {
+    grid-column: 2 / 3; /* set this column to start at grid line 2 and end at grid line 3 */
+    padding-left: 20%;
+    padding-top: 10%;
+  }
+  
+
+
+  .form__group {
+    position: relative;
+    padding: 20px 0 0;
+    width: 100%;
+    max-width: 180px;
+  }
+  
+  .form__field {
+    font-family: inherit;
+    width: 280%;
+    border: none;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 17px;
+    color: #116399; 
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  
+  .form__field::placeholder {
+    color: transparent;
+  }
+  
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 17px;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: gray;
+    pointer-events: none;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #116399, #f021e5);
+    border-image-slice: 1;
+  }
+  
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #0821ff60;
+    font-weight: 700;
+  }
+  
+  /* reset input */
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
+
+
+
+  .button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    color: orangered;
+    cursor: pointer;
+    position: relative;
+    padding: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all .15s ease;
+    margin-left: 25%;
+  }
+  
+  .button::before,
+  .button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid #7D8082;
+    transition: all .15s ease;
+  }
+  
+  .button::before {
+    top: 0;
+    border-bottom-width: 0;
+  }
+  
+  .button::after {
+    bottom: 0;
+    border-top-width: 0;
+  }
+  
+  .button:active,
+  .button:focus {
+    outline: none;
+  }
+  
+  .button:active::before,
+  .button:active::after {
+    right: 3px;
+    left: 3px;
+  }
+  
+  .button:active::before {
+    top: 3px;
+  }
+  
+  .button:active::after {
+    bottom: 3px;
+  }
+  
+  .button_lg {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: orangered;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+  }
+  
+  .button_lg::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: orangered;
+  }
+  
+  .button_lg::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    background-color: orangered;
+    transition: all .2s ease;
+  }
+  
+  .button_sl {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    left: -8px;
+    width: 0;
+    background-color: skyblue;
+    transform: skew(-15deg);
+    transition: all .2s ease;
+  }
+  
+  .button_text {
+    position: relative;
+  }
+  
+  .button:hover {
+    color: orangered;
+  }
+  
+  .button:hover .button_sl {
+    width: calc(100% + 15px);
+  }
+  
+  .button:hover .button_lg::after {
+    background-color: #fff;
+  }
+  
+
+ a {
+    text-decoration: none;
+  }
+  
+  .content {
+    display: none;
+    /* Additional styles for the content */
+  }
+  
+  .content.show {
+    display: block;
+  }
+
+  button {
+    font-size: 17px;
+    padding: 0.5em 2em;
+    border: transparent;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    background: dodgerblue;
+    color: white;
+    border-radius: 4px;
+   }
+   
+   button:hover {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
+   }
+   
+   button:active {
+    transform: translate(0em, 0.2em);
+   }
+
+   .form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 300px;
+    background-color: lightgrey;
+    border-radius: 12px;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+    color: black
+  }
+  
+  .message {
+    color: darkslategray;
+    font-size: 14px;
+    margin-top: 4px;
+    text-align: center
+  }
+  
+  .inputs {
+    margin-top: 10px
+  }
+  
+  .inputs input {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    border: none;
+    border-bottom: 1.5px solid #d2d2d2;
+    margin: 0 10px;
+  }
+  
+  .inputs input:focus {
+    border-bottom: 1.5px solid royalblue;
+    outline: none;
+  }
+  
+  .action {
+    margin-top: 24px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: royalblue;
+    color: white;
+    cursor: pointer;
+    align-self: end;
+  }

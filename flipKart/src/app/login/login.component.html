@@ -1,0 +1,56 @@
+
+
+<div class="grid-container">
+    <div class="grid-item column1">
+        <img src = "https://jgservices.in/wp-content/uploads/2021/01/flipkart-acc.-managment.jpg" width="750" height="690" >
+
+    </div>
+    <div class="grid-item column2">
+<form #loginform = "ngForm" (ngSubmit) = "login(loginform.value)">
+        <div class="form__group field">
+            <input type="email" class="form__field" placeholder="Name" name = email required="" ngModel required>
+            <label for="name" class="form__label"> <b> Enter Email/Mobile No</b></label>
+        </div>
+
+        <br> <br> <br>
+
+       
+
+        <button (click)="toggleContent()"> <b> Generate OTP </b>
+        </button>
+        <br>  <br> 
+    <div class="content" [ngClass]="{ 'show': displayContent }">
+      <!-- Your content goes here -->
+      <div class="form__group field">
+        <input type="password" class="form__field" placeholder="Name" name = password required="" ngModel required>
+        <label for="name" class="form__label"><b> Enter OTP </b></label>
+    </div>
+     
+    
+    
+    </div>
+
+
+        <br> <br>
+
+
+        <h5 align = "left" style="color: #2598db"> <b> By continuing, you agree to Flipkart's Terms of Use and Privacy Policy. </b></h5>
+
+        <br>
+
+        <button class="button">
+            <span class="button_lg">
+                <span class="button_sl"></span>
+                <span class="button_text">Login Now</span>
+            </span>
+        </button>
+
+</form>
+
+        <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>
+
+   <a routerLink = "/reg">    <h3 align = "ceter" style="color: #2598db"> <b> New to Flipkart? Create an account </b></h3> </a> 
+
+    </div>
+  </div>
+  

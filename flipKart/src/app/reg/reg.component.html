@@ -1,0 +1,50 @@
+
+
+<div class="grid-container">
+    <div class="grid-item column1">
+        <img src = "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_6fe9282581b9c911d5dbf208a1e1a646/flipkart-commerce-cloud-selection-manager.png" width="750" height="690" >
+
+    </div>
+    <div class="grid-item column2">
+
+        <h2 style="color: #2598db">
+            Looks like you're 
+        </h2>
+<h2 style="color: #2598db">
+    new here!
+</h2>
+
+<br> <br>
+<br> <br> 
+
+
+
+
+
+
+    <div class="form__group field">
+        <input type="email" class="form__field" placeholder="Name" name = email required="" ngModel>
+        <label for="name" class="form__label"> <b> Enter Mobile Number</b></label>
+    </div>
+
+    <br>  <br> 
+
+
+    <!-- <button (click)="toggleContent()">Continue</button> -->
+
+    <button  (click)="toggleContent()" > <b> Generate OTP </b>
+    </button>
+    <br>  <br> 
+<div class="content" [ngClass]="{ 'show': displayContent }">
+  <!-- Your content goes here -->
+  <form class="form"> <div class="title">OTP</div> <div class="title">Verification Code</div> <p class="message">We have sent a verification code to your mobile number</p> <div class="inputs"> <input id="input1" type="text" maxlength="1"> <input id="input2" type="text" maxlength="1"> <input id="input3" type="text" maxlength="1"> <input id="input4" type="text" maxlength="1"> </div> 
+    <button class="action" (click)="showAlert()">verify me</button> </form>
+
+
+</div>
+
+    
+  </div>
+  
+
+  

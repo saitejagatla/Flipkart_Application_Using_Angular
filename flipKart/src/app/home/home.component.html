@@ -1,0 +1,483 @@
+<nav>
+    <!-- <input type="checkbox" id="nav-toggle" />
+    <label for="nav-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </label>
+    <div class="logo">
+      <a href="#">My Website</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul> -->
+
+ <a routerLink = "/home">   <img src = "https://image.pitchbook.com/IIZvz8HxGpxmd4nnI5Irsnm0JAx1666857561209_200x200" height = "150" width = "150"> </a>
+
+
+
+    <div class="search">
+        <input type="text" class="search__input" placeholder="Search for products, brands and more" [(ngModel)]="searchText">
+        <button class="search__button" (click)="search()">
+            <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
+                <g>
+                    <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                </g>
+            </svg>
+        </button>
+    </div>
+
+    <button (click) = "submit()">
+        <b align = "left" style="color: #1d8fec "> Login </b>
+    </button>
+
+    <a href = "https://seller.flipkart.com/sell-online/?utm_source=fkwebsite&utm_medium=websitedirect"> <b> Become a Seller</b></a>
+
+
+    <div class = "more">
+
+        <div class="dropdown">
+            <button class="dropdown-btn">More  <i class="fa fa-chevron-down"></i></button>
+            <div class="dropdown-content">
+              <a href="#"> <span class="material-symbols-outlined">
+                notifications
+                </span> Notification Preferences</a>
+              <a href="#"> <span class="material-symbols-outlined">
+                live_help
+                </span> 24x7 Coustomer Care</a>
+              <a href="#"> <span class="material-symbols-outlined">
+                trending_up
+                </span> Advertise</a>
+              <a href="#"> <span class="material-symbols-outlined">
+                download
+                </span> Download App</a>
+            </div>
+          </div>
+          
+    </div>
+
+    <div class = "cart">
+
+   
+
+      
+
+      <a>  <b align = "left" style="color: white " (click)="showAlert()">  Cart </b> <i style="font-size:24px; color:white" class="fa">&#xf07a;</i>  </a>
+
+    </div>
+    
+  </nav>
+
+  <br>   <br>   <br>   <br>     <br>   <br> 
+  
+
+  <div class="parent1">
+    <div class="div1"> 
+        <a href = "https://www.flipkart.com/offers-list/content?screen=dynamic&pk=themeViews%3DDOTD%3Aviewalldesktop~widgetType%3DdealCard~contentType%3Dneo&wid=2.dealCard.OMU&fm=neo%2Fmerchandising&iid=M_73697d5f-3732-488b-9672-d2fd605c7317_1_372UD5BXDFYS_MC.G6ZC4RAJ9OHU&otracker=hp_rich_navigation_8_1.navigationCard.RICH_NAVIGATION_Top%2BOffers_G6ZC4RAJ9OHU&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_8_L0_view-all&cid=G6ZC4RAJ9OHU">
+        <img src="https://i.pinimg.com/originals/20/2d/6a/202d6aed6af25e2afec26baea4b4cff4.jpg" alt="Avatar" class="avatar">
+        <p> <b>Top Offers</b></p>
+    </a>
+    </div>
+    <div class="div2"> 
+       <a href = "https://www.flipkart.com/mobile-phones-store?fm=neo%2Fmerchandising&iid=M_a03af9c1-63df-442b-a965-ab5284e796e6_1_372UD5BXDFYS_MC.ZRQ4DKH28K8J&otracker=hp_rich_navigation_2_1.navigationCard.RICH_NAVIGATION_Mobiles_ZRQ4DKH28K8J&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_2_L0_view-all&cid=ZRQ4DKH28K8J">
+        <img src="https://images.unsplash.com/photo-1559723944-6913027cf19a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGFibGV0JTIwYW5kJTIwcGhvbmV8ZW58MHx8MHx8&w=1000&q=80" alt="Avatar" class="avatar">
+        <p><b>Mobiles & Tablets</b></p>
+    </a>
+    </div>
+    <div class="div3"> 
+
+        <a href = "https://www.flipkart.com/mobile-accessories/pr?sid=tyy,4mr&otracker=categorytree&fm=neo%2Fmerchandising&iid=M_e980b543-b51a-4215-955e-ada1b77d3cfa_1_372UD5BXDFYS_MC.DFEAMH0SZLF3&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Electronics~MobileAccessory~All_DFEAMH0SZLF3&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L2_view-all&cid=DFEAMH0SZLF3">
+            <img src="https://www.pngitem.com/pimgs/m/520-5208848_samsung-min-electronics-hd-png-download.png" alt="Avatar" class="avatar">
+            <p align = "center"><b>Electronics</b></p>
+        </a>
+        
+    </div>
+    <div class="div4"> 
+
+        <a href = "https://www.flipkart.com/tvs-and-appliances-new-clp-store?fm=neo%2Fmerchandising&iid=M_a7d11aae-3f03-468e-aa20-263c931cc16b_1_372UD5BXDFYS_MC.LO4IWVHA61BX&otracker=hp_rich_navigation_6_1.navigationCard.RICH_NAVIGATION_Appliances_LO4IWVHA61BX&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_6_L0_view-all&cid=LO4IWVHA61BX">
+            <img src="https://i.gadgets360cdn.com/large/Amazon_Appliances_Sale_1473408424629.jpeg" alt="Avatar" class="avatar">
+            <p><b>TVs & Appliances</b></p>
+        </a>
+
+    </div>
+    <div class="div5">
+        
+        <a href = "https://www.flipkart.com/clothing-and-accessories/topwear/pr?sid=clo,ash&p[]=facets.ideal_for%255B%255D%3DMen&p[]=facets.ideal_for%255B%255D%3Dmen&otracker=categorytree&fm=neo%2Fmerchandising&iid=M_cfc77641-5afc-4968-94a4-ce4b8ee779da_1_372UD5BXDFYS_MC.AHHHWF67UPNB&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Fashion~Men%2527s%2BTop%2BWear~All_AHHHWF67UPNB&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L2_view-all&cid=AHHHWF67UPNB">
+            <img src="https://thumbs.dreamstime.com/b/fashion-pretty-cool-youngwith-shopping-bags-wearing-black-hat-white-pants-over-colorful-orange-background-79063329.jpg" alt="Avatar" class="avatar">
+            <p align = "center"><b>Fashion</b></p>
+        </a>
+
+    </div>
+    <div class="div6"> 
+
+        <a href = "https://www.flipkart.com/search?q=beauty&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off">
+            <img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhdXR5JTIwcHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80" alt="Avatar" class="avatar">
+            <p align = "center"><b>Beauty</b></p>
+        </a>
+
+    </div>
+    <div class="div7">
+        <a href = "https://www.flipkart.com/home-furnishing/pr?sid=jra&marketplace=FLIPKART&otracker=nmenu_sub_Home%20%26%20Furniture_0_Furnishing&fm=neo%2Fmerchandising&iid=M_69ec3546-70cd-4926-a027-95edb7bc9ddf_1_372UD5BXDFYS_MC.A8O1FN5LHOZ5&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Home~Home%2BFurnishings~All_A8O1FN5LHOZ5&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L2_view-all&cid=A8O1FN5LHOZ5">
+            <img src="https://m.media-amazon.com/images/I/61DbP8xtgIL._SL1183_.jpg" alt="Avatar" class="avatar">
+            <p align = "center"><b>Home & Furniture</b></p>
+        </a>    
+    </div>
+    <div class="div8"> 
+
+        <a href = "https://www.flipkart.com/travel/flights?otracker=nmenu_Flights">
+            <img src="https://img.freepik.com/premium-vector/drawing-airplane-planet-earth-with-several-commercial-routes-air-freight-transport_594511-336.jpg" alt="Avatar" class="avatar">
+            <p align = "center"><b>Flights</b></p>
+        </a>    
+
+    </div>
+    <div class="div9"> 
+
+        <a href = "https://www.flipkart.com/grocery-supermart-store?marketplace=GROCERY&fm=neo%2Fmerchandising&iid=M_30d89c48-e0c0-4738-a6cc-f49a5dd935c3_1_372UD5BXDFYS_MC.CBUR1Q46W5F1&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Grocery_CBUR1Q46W5F1&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L0_view-all&cid=CBUR1Q46W5F1">
+            <img src="https://assets.aboutamazon.com/92/06/bb204a6842a49e7bdc66523a070c/blog2.jpg" alt="Avatar" class="avatar">
+            <p align = "center"><b>Grocery</b></p>
+        </a>    
+
+    </div>
+    </div>
+
+    <hr>
+
+    <div class = "bg">
+
+        <br> 
+
+    <div class="slideshow">
+        <img *ngFor="let image of images; let i = index"
+             [src]="image.src"
+             [alt]="image.alt"
+             [class.active]="i === currentIndex">
+      </div>
+
+      <hr>
+
+      <div class = "sbi">
+
+        <div class = "sbi2">
+        <img src = "https://hotdealszone.in/wp-content/uploads/2020/12/Flipkart-SBI-credit-card-discount-offer.jpg" width = "800" height = "120">
+    </div>
+
+      </div>
+
+      
+      <br> 
+
+      <div class="scrolling-cards-container">
+        <div class="scrolling-card" *ngFor="let item of items">
+          <div class="card-image">
+            <img [src]="item.imageUrl" alt="{{ item.title }}" />
+          </div>
+          <div class="card-content">
+            <div class="card-header">{{ item.title }}</div>
+            <div class="card-body">{{ item.content }}</div>
+            <div class="card-footer">
+              <button (click)="onButtonClick(item)" (click) = "showAlert()" (click) = "submit()"><b> Buy </b></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <button class="button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24">
+            <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
+        </svg>
+        Top Deals on Electronics
+    </button>
+      
+    <br> 
+
+      <div class="parent">
+        <div class="div1"> 
+
+          <div class="card">
+            <div class="card-img">
+              <img src = "https://cdn1.smartprix.com/rx-iD1d9czrr-w1200-h1200/D1d9czrr.jpg" height="215" width="190">
+            </div>
+            <div class="card-info">
+              <p class="text-title">DELL Core i5</p>
+              <p class="text-body">8 GB/512 GB SSD/Windows</p>
+            </div>
+            <div class="card-footer">
+            <span class="text-title"> ₹69,890 (13% off) </span>        
+          </div>
+          <button class="add-to-cart-btn" (click) = "showAlert()" (click) = "submit()">
+            <span>Add to Cart</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.1 12.6a2 2 0 0 0 2 1.4h10a2 2 0 0 0 2-1.4L23 6H6"></path>
+            </svg>
+          </button>
+        </div>
+
+
+        </div>
+        <div class="div2"> 
+
+          <div class="card">
+            <div class="card-img">
+              <img src = "https://m.media-amazon.com/images/I/61XbUCdgwbL._SL1500_.jpg" height="215" width="190">
+            </div>
+            <div class="card-info">
+              <p class="text-title">realme Pad Mini</p>
+              <p class="text-body">4GB RAM 64GB ROM</p>
+            </div>
+            <div class="card-footer">
+            <span class="text-title">₹14,999 (38% off)</span>        
+          </div>
+          <button class="add-to-cart-btn" (click) = "showAlert()" (click) = "submit()">
+            <span>Add to Cart</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.1 12.6a2 2 0 0 0 2 1.4h10a2 2 0 0 0 2-1.4L23 6H6"></path>
+            </svg>
+          </button>
+        </div>
+
+
+        </div>
+        <div class="div3">
+          
+          <div class="card">
+            <div class="card-img">
+              <img src = "https://cdn1.smartprix.com/rx-i0i5PQIYP-w280-h280/canon-eos-90d-32-5-m.jpg" height="215" width="190">
+            </div>
+            <div class="card-info">
+              <p class="text-title">NIKON D750 DSLR</p>
+              <p class="text-body">Camera Body with Single Lens</p>
+            </div>
+            <div class="card-footer">
+            <span class="text-title">₹129,990 (21% off)</span>        
+          </div>
+          <button class="add-to-cart-btn" (click) = "showAlert()" (click) = "submit()">
+            <span>Add to Cart</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.1 12.6a2 2 0 0 0 2 1.4h10a2 2 0 0 0 2-1.4L23 6H6"></path>
+            </svg>
+          </button>
+        </div>
+        
+        </div>
+        <div class="div4"> 
+
+          <div class="card">
+            <div class="card-img">
+              <img src = "https://m.media-amazon.com/images/I/61SNQW5vy8L._SL1500_.jpg" height="215" width="190">
+            </div>
+            <div class="card-info">
+              <p class="text-title">REDMI Watch 2 Lite</p>
+              <p class="text-body">3.94 cm HD Edge Display</p>
+            </div>
+            <div class="card-footer">
+            <span class="text-title">₹3,499 (56% off)</span>        
+          </div>
+          <button class="add-to-cart-btn" (click) = "showAlert()" (click) = "submit()">
+            <span>Add to Cart</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.1 12.6a2 2 0 0 0 2 1.4h10a2 2 0 0 0 2-1.4L23 6H6"></path>
+            </svg>
+          </button>
+        </div>
+
+
+        </div>
+        <div class="div5"> 
+
+          <div class="card">
+            <div class="card-img">
+              <img src = "https://m.media-amazon.com/images/I/41lXAt9EKfL._SX466_.jpg" height="215" width="190">
+            </div>
+            <div class="card-info">
+              <p class="text-title">HP250 Wireless Mouse</p>
+              <p class="text-body">(2.4GHz Wireless, Black)</p>
+            </div>
+            <div class="card-footer">
+            <span class="text-title">₹599 (40% off)</span>        
+          </div>
+          <button class="add-to-cart-btn" (click) = "showAlert()" (click) = "submit()">
+            <span>Add to Cart</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.1 12.6a2 2 0 0 0 2 1.4h10a2 2 0 0 0 2-1.4L23 6H6"></path>
+            </svg>
+          </button>
+        </div>
+
+
+        </div>
+        <div class="div6">
+        
+          <div class="card">
+            <div class="card-img">
+              <img src = "https://images-eu.ssl-images-amazon.com/images/I/61NbNYrhNyL._AC_UL200_SR200,200_.jpg" height="215" width="190">
+            </div>
+            <div class="card-info">
+              <p class="text-title">boAt Soundbar</p>
+              <p class="text-body">(Premium Black, 2.1 Channel)</p>
+            </div>
+            <div class="card-footer">
+            <span class="text-title">₹6,499 (45% off)</span>        
+          </div>
+          <button class="add-to-cart-btn" (click) = "showAlert()" (click) = "submit()">
+            <span>Add to Cart</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.1 12.6a2 2 0 0 0 2 1.4h10a2 2 0 0 0 2-1.4L23 6H6"></path>
+            </svg>
+          </button>
+        </div>
+        
+        </div>
+        </div>
+
+        <br>
+
+        <div class = "footer">
+
+          <div class="parent5">
+            <div class="div0">  
+           
+              <h5 align = "left" style="color: grey"> ABOUT </h5>
+
+              
+              <a href = ""> <p align = "left" style="color: white"> <b> Contact Us </b></p></a>
+              <a href = ""> <p align = "left" style="color: white"> <b> About Us </b></p></a>
+              <a href = ""> <p align = "left" style="color: white"> <b> Careers </b></p></a>
+              <a href = ""> <p align = "left" style="color: white"> <b> Flipkart Stories</b></p></a>
+              <a href = ""> <p align = "left" style="color: white"> <b> Press </b></p></a>
+              <a href = ""> <p align = "left" style="color: white"> <b> Flipkart Wholesale </b></p></a>
+              <a href = ""> <p align = "left" style="color: white"> <b> Corporate Information </b></p></a>
+            
+            
+            </div>
+            <div class="div2">    
+
+              <h5 align = "left" style="color: grey"> HELP </h5>
+
+              
+              <a href = ""> <p align = "left" style="color: white"> <b> Payments </b></p></a>
+              <a href = ""> <p align = "left" style="color: white"> <b> Shipping </b></p></a>
+              <a href = ""> <p align = "left" style="color: white"> <b> Cancellation & Returns</b></p></a>
+              <a href = ""> <p align = "left" style="color: white"> <b> FAQ</b></p></a>
+              <a href = ""> <p align = "left" style="color: white"> <b> Report Infringement</b></p></a>
+
+            </div>
+            <div class="div3">      
+
+              <h5 align = "left" style="color: grey"> CONSUMER POLICY </h5>
+
+              
+              <a href = ""> <p align = "left" style="color: white"> <b> Return Policy </b></p></a>
+              <a href = ""> <p align = "left" style="color: white"> <b> Terms of Use </b></p></a>
+              <a href = ""> <p align = "left" style="color: white"> <b> Security </b></p></a>
+              <a href = ""> <p align = "left" style="color: white"> <b> Privacy </b></p></a>
+              <a href = ""> <p align = "left" style="color: white"> <b> Sitemap </b></p></a>
+              <a href = ""> <p align = "left" style="color: white"> <b> Grievance Redressal </b></p></a>
+              <a href = ""> <p align = "left" style="color: white"> <b> EPR Compliance </b></p></a>
+
+            </div>
+            <div class="div4">    
+              
+              <h5 align = "left" style="color: grey"> SOCIAL </h5>
+
+              
+              <a href = ""> <p align = "left" style="color: white"> <b> Facebook </b></p></a>
+              <a href = ""> <p align = "left" style="color: white"> <b> Twitter </b></p></a>
+              <a href = ""> <p align = "left" style="color: white"> <b> YouTube </b></p></a>
+           
+            
+            </div>
+            <div class="div12"> 
+
+              <h3 align = "right" style="color: grey"> Registered Office Address: </h3>
+
+            
+              <pre align = "left" style="color: white"> <b>
+                Flipkart Internet Private Limited,
+
+                Buildings Alyssa, Begonia &
+
+                Clove Embassy Tech Village,
+
+                Outer Ring Road,
+                
+                Devarabeesanahalli Village,
+
+                Bengaluru, 560103,
+
+                Karnataka, India,
+
+                CIN : U51109KA2012PTC066107
+
+                Telephone: 044-45614700
+              </b> </pre>   
+            
+            </div>
+            <!-- <div class="div6">
+              
+            </div> -->
+            </div>
+            <hr>
+
+            <div class="parent">
+              <div class="div1"> 
+
+        <a href = "">  <h3 align = "left" style="color: white"> <b> <span class="material-symbols-outlined">
+          work
+          </span> Become a Seller </b> </h3> </a> 
+
+              </div>
+              <div class="div2"> 
+
+   <a href = "">   <h3 align = "left" style="color: white"> <b> <span class="material-symbols-outlined">
+    stars
+    </span> Advertise </b> </h3> </a>
+              </div>
+              <div class="div3"> 
+
+                <a href = "">  <h3 align = "left" style="color: white"> <b> <span class="material-symbols-outlined">
+                  redeem
+                  </span> Gift Cards </b> </h3> </a>
+              </div>
+              <div class="div4">
+              
+                <a href = "">  <h3 align = "left" style="color: white"> <b> <span class="material-symbols-outlined">
+                  help
+                  </span> Help Center </b> </h3> </a>
+              </div>
+              <div class="div5">
+                <h3 align = "left" style="color: white"> <b> © 2007-2023 Flipkart.com </b></h3>
+                 </div>
+              <div class="div6">
+
+                <img src = "https://happyplanetstudio.co.uk/wp-content/uploads/2020/05/Sumup-Accepted-Cards-Update.png" height="50" width="500">
+              </div>
+              </div>
+        
+            
+        </div>
+
+
+    
+      
+    </div>
+
+
+
+
+    
